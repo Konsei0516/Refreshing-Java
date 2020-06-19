@@ -1,8 +1,6 @@
 public class Main {
   public static void main(String[] args) {
-    float f = 3;
-    double d = f;
-    System.out.println(f);
-    System.out.println(d);
+    int age = (int)3.2;
+    System.out.println(age);
   }
 }
