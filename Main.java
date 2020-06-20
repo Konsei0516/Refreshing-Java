@@ -1,6 +1,8 @@
 public class Main {
   public static void main(String[] args) {
-    int age = (int)3.2;
-    System.out.println(age);
+    String name = "すがわら";
+    String message;
+    message = name + "さん,こんにちは";
+    System.out.println(message);
   }
 }
