@@ -1,8 +1,6 @@
 public class Main {
   public static void main(String[] args) {
-    String name = "すがわら";
-    String message;
-    message = name + "さん,こんにちは";
-    System.out.println(message);
+    int r = new java.util.Random().nextInt(90);
+    System.out.println("あなたは多分" + r + "歳ですね");
   }
 }
