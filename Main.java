@@ -1,6 +1,10 @@
 public class Main {
   public static void main(String[] args) {
-    int r = new java.util.Random().nextInt(90);
-    System.out.println("あなたは多分" + r + "歳ですね");
+    boolean tenki = true;
+    if (tenki == true) {
+      System.out.println("洗濯します");
+    } else {
+      System.out.println("DVDを見ます");
+    }
   }
 }
