@@ -1,9 +1,9 @@
 public class Main {
   public static void main(String[] args) {
-    int[] scores = {20,30,40,50,80 };
-    for (int value : scores){
-      System.out.println(value);
-    }
-    
+    int[] arrayA = {1,2,3};
+    int[] arrayB;
+    arrayB = arrayA;
+    arrayB[0] = 100;
+    System.out.println(arrayA[0]);
   }
 }
