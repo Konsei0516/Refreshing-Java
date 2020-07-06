@@ -1,7 +1,10 @@
 public class Main {
   public static void main(String[] args) {
-    int[][] scores = {{40,50,60},{80,60,70}};
-    System.out.println(scores.length);
-    System.out.println(scores[0].length);
+    System.out.println("メソッドを呼び出します");
+    hello();
+    System.out.println("メソッドの呼び出しが終わりました");
+  }
+  public static void hello(){
+    System.out.println("湊さんこんにちは");
   }
 }
