@@ -1,13 +1,19 @@
 public class Main {
   public static void main(String[] args){
-    int yusha_hp = 100;
-    int matango1_hp = 50;
-    int matangi2_hp = 48;
-    String yusha_name = "ミナト";
-    int matangi1_level = 10;
-    int matangi2_level = 10;
-    System.out.println(yusha_name + "は5秒座った");
-    yusha_hp += 5;
-    System.out.println("HPがは5ポイント回復した");
+    Hero h = new Hero();
+    h.name = "ミナト";
+    h.hp = 100;
+
+    Matango m1 = new Matango();
+    m1.hp = 50;
+    m1.suffix = 'A';
+    Matango m2 = new Matango();
+    m2.hp = 48;
+    m2.suffix = 'B';
+    
+    h.slip();
+    m1.run();
+    m2.run();
+    h.run();
   }
 }
