@@ -1,7 +1,7 @@
 public class Main {
   public static void main(String[] args){
-    Hero h = new Hero();
-    h.name = "ミナト";
+    Hero h;
+    h = new Hero();
     h.hp = 100;
 
     Matango m1 = new Matango();
