@@ -1,10 +1,8 @@
 public class Main {
   public static void main(String[] args){
-    Hero h= new Hero();
-    h.name = "ミナト";
+    Hero h= new Hero("ミナト");
     h.hp = 100;
-    Hero h2 = new Hero();
-    h2.name = "アサカ";
+    Hero h2 = new Hero("アサカ");
     h2.hp = 200;
     Wizard w = new Wizard();
     w.name = "スガワラ";
