@@ -11,5 +11,6 @@ public class Main {
     w.heal(h2);
     w.heal(h2);
     System.out.println(h.hp);
+    System.out.println(h.name);
   }
 }
