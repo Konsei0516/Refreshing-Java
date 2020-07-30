@@ -1,5 +1,7 @@
 public class Main {
   public static void main(String[] args){
+    SuperHero sh = new SuperHero();
+    sh.run();
     Hero h1 = new Hero("ミナト");
     System.out.println(h1.name);
     h1.hp = 100;
