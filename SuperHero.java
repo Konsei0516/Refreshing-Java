@@ -9,13 +9,9 @@ public class SuperHero extends Hero{
     System.out.println("着地した");
   }
   public void attack(Matango m) {
-    System.out.println(this.name + "の攻撃");
-    m.hp -= 5;
-    System.out.println("5ポイントのダメージを与えた");
+    super.attack(m);
     if (this.flying) {
-      System.out.println(this.name + "の攻撃");
-      m.hp -= 5;
-      System.out.println("5ポイントのダメージを与えた");
+      super.attack(m);
     }
   }
 }
