@@ -8,12 +8,6 @@ public class SuperHero extends Hero{
     this.flying = false;
     System.out.println("着地した");
   }
-  public void attack(Matango m) {
-    super.attack(m);
-    if (this.flying) {
-      super.attack(m);
-    }
-  }
   public SuperHero(){
     System.out.println("SuperHeroのコンストラクタが作動");
   }
