@@ -2,6 +2,7 @@ public class Main {
   public static void main(String[] args){
     SuperHero sh = new SuperHero();
     Weapon w = new Weapon();
+    
     sh.run();
     Hero h1 = new Hero("ミナト");
     System.out.println(h1.name);
