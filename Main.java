@@ -2,7 +2,8 @@ public class Main {
   public static void main(String[] args){
     SuperHero sh = new SuperHero();
     Weapon w = new Weapon();
-    
+    Slime s = new Slime(); Monster m = new Slime();
+    s.run(); m.run();
     sh.run();
     Hero h1 = new Hero("ミナト");
     System.out.println(h1.name);
