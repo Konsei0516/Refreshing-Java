@@ -34,4 +34,8 @@ public class Hero{
     this("ダミー");
     System.out.println("Heroのコンストラクタが動作");
   }
+  private void die(){
+    System.out.println(this.name + "は死んでしまった");
+    System.out.println("GAME OVER");
+  }
 }
