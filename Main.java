@@ -13,5 +13,8 @@ public class Main {
     h2.hp = 200;
     System.out.println(h1.hp);
     System.out.println(h1.name);
+    Empty e = Empty();
+    String s = e.toString();
+    System.out.println(s);
   }
 }
