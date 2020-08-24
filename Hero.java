@@ -34,12 +34,16 @@ public class Hero{
     this("ダミー");
     System.out.println("Heroのコンストラクタが動作");
   }
-  
+
   public String getName(){
     return this.name;
   }
 
   public void setName(String name){
     this.name = name;
+  }
+
+  public String toString(){
+    return "名前:" + this.name + "/HP" + this.hp;
   }
 }
