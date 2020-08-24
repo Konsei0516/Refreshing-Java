@@ -1,7 +1,8 @@
 public class Main {
   public static void main(String[] args){
-    Object o1 = new Empty();
-    Object o2 = new Hero();
-    Object o3 = "こんにちは";
+    Hero h = new Hero();
+    h.name = "港";
+    h.hp = 100;
+    System.out.println(h.toString());
   }
 }

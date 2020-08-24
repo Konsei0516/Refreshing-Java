@@ -1,6 +1,6 @@
 public class Hero{
   String name;
-  private int hp;
+  int hp;
   Sword sword;
   public void attack(){
     System.out.println(this.name + "は攻撃した");
@@ -34,11 +34,7 @@ public class Hero{
     this("ダミー");
     System.out.println("Heroのコンストラクタが動作");
   }
-  private void die(){
-    System.out.println(this.name + "は死んでしまった");
-    System.out.println("GAME OVER");
-  }
-
+  
   public String getName(){
     return this.name;
   }
