@@ -11,5 +11,7 @@ public class Main {
     } else {
       System.out.println("違う内容です");
     }
+    System.out.println(h1.hp);
+    System.out.println(Hero.money);
   }
 }
