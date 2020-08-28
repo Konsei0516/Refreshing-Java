@@ -1,13 +1,13 @@
 public class Main {
   public static void main(final String[] args) {
-    Hero h1 = new Hero();
-    Hero h2 = new Hero();
-
-    Hero.money = 100;
-    System.out.println(h1.hp);
-    System.out.println(Hero.money);
-    System.out.println(h1.money);
-    h1.money = 300;
-    System.out.println(h2.money);
+    String s1 = "Java and JavaScript";
+    if(s1.contains("Java")){
+      System.out.println("文字列s1はjavaを含んでいます");
+    }
+    if(s1.endsWith("Java")){
+      System.out.println("文字列s1はjavaが末尾にあります");
+    }
+    System.out.println("文字列で最初にJavaが登場するのは" + s1.indexOf("Java"));
+    System.out.println("文字列で最後にJavaが登場するのは" + s1.lastIndexOf("Java"));
   }
 }
