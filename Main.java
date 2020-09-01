@@ -1,7 +1,7 @@
 public class Main {
   public static void main(String[] args) {
-    String s = "abc,def:ghi";
-    String w = s.replaceAll("[beh]","X");
-    System.out.println(w);
+    long start = System.currentTimeMillis();
+    long end = System.currentTimeMillis();
+    System.out.println("処理にかかった時間は" + (end - start) + "ミリ秒でした");
   }
 }
