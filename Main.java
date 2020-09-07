@@ -1,12 +1,20 @@
 import java.time.*;
+import java.time.format.*;
 
 public class Main {
   public static void main(String[] args) throws Exception{
-    //ZoneDateTimeの生成
-    LocalDateTime l1 = LocalDateTime.now();
-    LocalDateTime l2 = LocalDateTime.of(2020,1,1,9,5,0,0);
+    DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+    LocalDate ldate = LocalDate.parse("2020/09/22",fmt);
 
-    ZonedDateTime z1 = l2.atZone(ZoneId.of("Europe/London"));
-    LocalDateTime l3 = z1.toLocalDateTime();
+    //1000日後を計算
+    LocalDate ldatep = ldate.plusDays(1000);
+    String str = ldatep.format(fmt);
+    System.out.println("1000日後は" + str);
+
+    //現在との比較
+    LocalDate now = LocalDate.now();
+    if(now.isAfter(ldatep)){
+      System.out.println("1000日後は過去日付です");
+    }
   }
 }
