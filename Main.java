@@ -1,15 +1,13 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
   public static void main(String[] args) throws Exception{
-    ArrayList<String>names = new ArrayList<String>();
-    names.add("港");
-    names.add("朝日");
-    names.add("菅原");
-    Iterator<String>it = names.iterator();
-    while(it.hasNext()) {
-      String e = it.next();
-      System.out.println(e);
-    }
+    Set<String> colors = new HashSet<String>();
+    colors.add("赤");
+    colors.add("青");
+    colors.add("黄");
+    colors.add("赤");
+    System.out.println("色は" + colors.size() + "種類")；
   }
 }
