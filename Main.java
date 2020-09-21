@@ -1,15 +1,12 @@
-import java.io.InputStream;
-import java.net.URL;
+import java.sql.*;
 
 public class Main {
-  public static void main(String[] args){
-    URL u = new URL("https://book.ompress.co.jp/");
-    InputStream is = u.openStream();
-    int i = is.read();
-    while (i != -1){
-      char c = (char)i;
-      System.out.println(c);
-      i = is.read();
-    }
+  public static void main(String[] args) throws Exception{
+    Class.forName("org.h2.Driver");
+    String dburl = "jdbc:h2:~/test";
+    String sql = "INSERT INTO EMPLOYEES(name) VALUES('aoki')";
+    Connection conn = DriverManager.getConnection(dburl);
+    conn.createStatement().executeUpdate(sql);
+    conn.close();
   }
 }
